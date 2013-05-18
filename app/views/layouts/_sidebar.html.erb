@@ -1,0 +1,10 @@
+<%- if session[:user_id] == nil -%>
+	<div class="alert alert-error"> Login to access this section </div>
+<%-else -%>
+	<ul class="nav nav-tabs nav-stacked">
+		<li>Profile </li>
+		<li>Messages </li>
+		<li>Lists </li>
+		<li>Movies </li>
+	</ul>
+<%- end -%>
